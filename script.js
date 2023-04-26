@@ -58,6 +58,7 @@ for (let i = 0; i<Data.length; i++) {
 
 function createPage(incomingJSON){
     let newContent = document.createElement("div");
+    newContent.setAttribute("data-aos", "fade-up");
 
     let newImage = document.createElement("img");
     newImage.src = incomingJSON["image"];
